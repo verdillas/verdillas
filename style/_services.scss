@@ -1,0 +1,44 @@
+.header-services {
+  color: $white;
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+
+  h4 {
+    color: $white;
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+  }
+  p {
+    color: $white;
+    padding-bottom: 1rem;
+  }
+
+  svg {
+    padding-top: 0.6rem;
+    text-align: center;
+    max-height: 6rem;
+    align-items: baseline;
+    margin: auto;
+  }
+  div {
+    padding: 4rem;
+  }
+}
+#paypal{
+
+margin: auto 0;
+
+}
+@media (max-width: 738px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+  }
+}

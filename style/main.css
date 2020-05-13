@@ -1,0 +1,273 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: proxima-nova, Helvetica, sans-serif;
+  line-height: 1.3;
+  margin: 0px;
+  padding: 0px;
+  background-color: #004643;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  max-width: 100vw;
+}
+
+.header {
+  background-image: url(/images/bg.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header .logo svg {
+  padding-top: 1.5rem;
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.header h2 {
+  padding: 0 2rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #fffffe;
+  min-width: 50vw;
+}
+
+.header .h2-gratis {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.contact-form {
+  margin: auto;
+  width: 30vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 25%;
+      grid-template-columns: auto 25%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "email CTA" "description description";
+}
+
+.email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
+  height: 3rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.cta-button {
+  cursor: pointer;
+  margin-left: -3px;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: CTA;
+  background-color: #f9bc60;
+  color: #001e1d;
+  text-decoration: none;
+  border: none;
+  height: 3rem;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+form label {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: description;
+  color: #fffffe;
+  padding-top: 0.5rem;
+}
+
+form input {
+  color: gray;
+  padding: 1rem;
+}
+
+header p {
+  color: #fffffe;
+  text-align: center;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-image: url(/images/bg-mb.png);
+  }
+  .header h2 {
+    font-size: 1.8rem;
+  }
+  #logo-white {
+    width: 70%;
+  }
+  .contact-form {
+    width: 80vw;
+  }
+}
+
+.about-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto-fit, 1fr 1fr;
+      grid-template-columns: auto-fit, 1fr 1fr;
+  -ms-grid-rows: 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr;
+      grid-template-areas: "hacer servir " "hacer confiar";
+}
+
+.about-us h3 {
+  font-size: 2rem;
+}
+
+.que-hacemos {
+  padding: 1.5rem;
+  color: #001e1d;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: hacer;
+  background-color: #abd1c6;
+}
+
+.que-hacemos p {
+  padding: 1rem 0;
+  padding-right: 4rem;
+  color: #004643;
+  font-size: 1.2rem;
+}
+
+.que-hacemos svg {
+  width: 25rem;
+}
+
+.donde-servimos {
+  padding: 1.5rem;
+  color: #001e1d;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: servir;
+  background-color: #f9bc60;
+}
+
+.donde-servimos p {
+  padding: 1rem 0;
+  padding-right: 4rem;
+  color: #001e1d;
+  font-size: 1.2rem;
+}
+
+.donde-servimos svg {
+  width: 12rem;
+}
+
+.confiar-en-nosotras {
+  padding: 1.5rem;
+  color: #fffffe;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: confiar;
+  background-color: #e16162;
+}
+
+.confiar-en-nosotras p {
+  padding-right: 20px;
+  padding: 1rem 0;
+  color: #fffffe;
+  font-size: 1.2rem;
+}
+
+.about-us svg {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "hacer" "servir" "confiar";
+  }
+}
+
+.header-services {
+  color: #fffffe;
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+}
+
+.services h4 {
+  color: #fffffe;
+  font-size: 1.5em;
+  padding-bottom: 1rem;
+}
+
+.services p {
+  color: #fffffe;
+  padding-bottom: 1rem;
+}
+
+.services svg {
+  padding-top: 0.6rem;
+  text-align: center;
+  max-height: 6rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: auto;
+}
+
+.services div {
+  padding: 4rem;
+}
+
+#paypal {
+  margin: auto 0;
+}
+
+@media (max-width: 738px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=main.css.map */

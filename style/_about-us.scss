@@ -1,0 +1,62 @@
+.about-us {
+  display: grid;
+  grid-template-columns: (auto-fit), 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "hacer servir " "hacer confiar";
+  h3 {
+    font-size: 2rem;
+  }
+}
+.que-hacemos {
+  padding: 1.5rem;
+  color: $headline;
+  grid-area: hacer;
+  background-color: $secondary;
+  p {
+    padding: 1rem 0;
+    padding-right: 4rem;
+    color: $primary;
+    font-size: 1.2rem;
+  }
+  svg {
+    width: 25rem;
+  }
+}
+.donde-servimos {
+  padding: 1.5rem;
+  color: $headline;
+  grid-area: servir;
+  background-color: $highlight;
+  p {
+    padding: 1rem 0;
+    padding-right: 4rem;
+    color: $headline;
+    font-size: 1.2rem;
+  }
+  svg {
+    width: 12rem;
+  }
+}
+.confiar-en-nosotras {
+  padding: 1.5rem;
+  color: $white;
+  grid-area: confiar;
+  background-color: $tertiary;
+  p {
+    padding-right: 20px;
+    padding: 1rem 0;
+    color: $white;
+    font-size: 1.2rem;
+  }
+}
+.about-us svg {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "hacer" "servir" "confiar";
+  }
+}
