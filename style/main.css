@@ -269,5 +269,41 @@ header p {
         grid-template-columns: 1fr;
     grid-row: 1fr 1fr;
   }
+  .services div {
+    padding: 2rem 4rem;
+  }
+}
+
+.footer {
+  line-height: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #abd1c6;
+  color: #004643;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -webkit-box-flex: initial;
+      -ms-flex-positive: initial;
+          flex-grow: initial;
+}
+
+.footer svg {
+  width: 1rem;
+}
+
+.footer a:link, .footer a:visited, .footer a:active {
+  color: #004643;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
