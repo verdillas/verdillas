@@ -1,11 +1,10 @@
 .header {
   background-image: url(/images/bg.png);
-  height: 100vh;
   max-width: 100vw;
-  height: calc(var(--vh, 1vh) * 100);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-sizing: border-box;
   .logo svg {
     padding-top: 1.5rem;
     display: block;
@@ -77,6 +76,10 @@ header p {
   text-align: center;
   width: 100%;
 }
+#arrow-down{
+  margin-bottom:1rem ;
+}
+
 @media (max-width: 768px) {
   .header {
     background-image: url(/images/bg-mb.png);
@@ -89,5 +92,11 @@ header p {
   }
   .contact-form {
     width: 80vw;
+  }
+}
+
+@media (min-width: 380px) {
+  .arrow-down {
+    margin-top: 2rem;
   }
 }
